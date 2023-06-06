@@ -11,7 +11,7 @@ Peran Sistem Rekomendasi dalam E-Commerce: Di industri e-commerce, sistem rekome
 
 Tren Konsumsi Konten Digital: Konsumsi konten digital seperti film, musik, dan acara televisi telah menjadi tren yang signifikan dalam beberapa tahun terakhir. Pengguna memiliki preferensi dan selera yang unik, dan dengan menggunakan sistem rekomendasi yang cerdas, platform streaming seperti Netflix dan Spotify dapat memberikan rekomendasi yang sangat personal kepada pengguna, membantu mereka menemukan konten yang relevan dan memuaskan.
 
-Algoritma Collaborative Filtering dan Matrix Factorization: Dalam proyek ini, kami menggunakan algoritma Collaborative Filtering dengan metode Matrix Factorization, seperti Singular Value Decomposition (SVD). Algoritma ini merupakan pendekatan yang efektif dalam membangun sistem rekomendasi, dengan memanfaatkan data rating dari pengguna untuk menemukan pola dan hubungan antara pengguna dan item yang direkomendasikan.
+Algoritma *Collaborative Filtering* dan *Matrix Factorization*: Dalam proyek ini, kami menggunakan algoritma *Collaborative Filtering* dengan metode *Matrix Factorization*, seperti *Singular Value Decomposition* (SVD). Algoritma ini merupakan pendekatan yang efektif dalam membangun sistem rekomendasi, dengan memanfaatkan data rating dari pengguna untuk menemukan pola dan hubungan antara pengguna dan item yang direkomendasikan.
 
 Dataset MovieLens: Dataset MovieLens merupakan salah satu dataset paling populer untuk membangun sistem rekomendasi. Dataset ini berisi informasi rating pengguna terhadap film, serta data tambahan seperti informasi pengguna dan detail film. Dengan menggunakan dataset ini, kami dapat menguji dan melatih model sistem rekomendasi kami.
 
@@ -78,8 +78,6 @@ Data Understanding proyek sistem rekomendasi ini melibatkan pemahaman yang menda
 6. Data Tambahan: Selain data rating, dataset MovieLens juga dapat mencakup data tambahan seperti tag yang diberikan oleh pengguna pada film tertentu atau informasi lain yang relevan. Data tambahan ini dapat memberikan konteks tambahan dalam membangun sistem rekomendasi.
 
 Dalam proses Data Understanding ini, penting untuk memahami struktur dataset, informasi yang terkandung di dalamnya, serta potensi data yang dapat dieksplorasi untuk membangun sistem rekomendasi yang efektif.
-
-Paragraf awal bagian ini menjelaskan informasi mengenai jumlah data, kondisi data, dan informasi mengenai data yang digunakan. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
 
 Variabel-variabel yang terdapat dalam dataset MovieLens dapat mencakup:
 
@@ -150,11 +148,11 @@ Rekomendasi ini didasarkan pada prediksi rating yang diberikan oleh model sistem
 Penting untuk dicatat bahwa rekomendasi ini bersifat contoh dan mungkin berbeda untuk pengguna lain atau dalam kasus yang berbeda. Sistem rekomendasi yang dibangun dalam proyek ini dapat digunakan untuk memberikan rekomendasi yang lebih personal dan relevan kepada pengguna berdasarkan preferensi mereka.
 
 ## Evaluation
-Dalam proyek ini, untuk melakukan evaluasi kinerja model sistem rekomendasi, kita menggunakan dua metrik evaluasi yang umum digunakan dalam collaborative filtering:
+Dalam proyek ini, untuk melakukan evaluasi kinerja model sistem rekomendasi, kita menggunakan dua metrik evaluasi yang umum digunakan dalam *collaborative filtering*:
 
-1. Root Mean Squared Error (RMSE): Metrik ini mengukur sejauh mana prediksi model berbeda dari nilai sebenarnya dalam skala rating. RMSE menghitung akar dari rata-rata kuadrat selisih antara prediksi rating dan rating sebenarnya. Semakin rendah nilai RMSE, semakin baik kinerja model dalam memprediksi rating.
+1. *Root Mean Squared Error* (RMSE): Metrik ini mengukur sejauh mana prediksi model berbeda dari nilai sebenarnya dalam skala rating. RMSE menghitung akar dari rata-rata kuadrat selisih antara prediksi rating dan rating sebenarnya. Semakin rendah nilai RMSE, semakin baik kinerja model dalam memprediksi rating.
 
-2. Mean Absolute Error (MAE): Metrik ini mengukur nilai rata-rata dari selisih absolut antara prediksi rating dan rating sebenarnya. MAE menghitung rata-rata dari selisih absolut antara prediksi dan rating sebenarnya. Semakin rendah nilai MAE, semakin baik kinerja model dalam memprediksi rating.
+2. *Mean Absolute Error* (MAE): Metrik ini mengukur nilai rata-rata dari selisih absolut antara prediksi rating dan rating sebenarnya. MAE menghitung rata-rata dari selisih absolut antara prediksi dan rating sebenarnya. Semakin rendah nilai MAE, semakin baik kinerja model dalam memprediksi rating.
 
 Hasil proyek ini berdasarkan metrik evaluasi tersebut adalah sebagai berikut:
 
