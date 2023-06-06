@@ -68,24 +68,68 @@ Tujuan proyek sistem rekomendasi ini adalah untuk mengatasi pernyataan masalah y
     - Mengajukan 2 atau lebih solution approach (algoritma atau pendekatan sistem rekomendasi).
 
 ## Data Understanding
+
+Data Understanding proyek sistem rekomendasi ini melibatkan pemahaman yang mendalam tentang dataset yang digunakan, yaitu [dataset MovieLens](http://files.grouplens.org/datasets/movielens/ml-100k.zip). Berikut ini adalah beberapa informasi penting tentang dataset tersebut:
+
+1. Sumber Dataset: Dataset MovieLens dihasilkan oleh GroupLens Research dan menyediakan data rating pengguna terhadap film. Dataset ini digunakan secara luas dalam proyek-proyek sistem rekomendasi dan tersedia secara publik.
+
+2. Jumlah Data: Dataset MovieLens tersedia dalam beberapa versi dengan jumlah data yang berbeda. Contohnya, versi MovieLens 100K terdiri dari sekitar 100.000 rating yang diberikan oleh sekitar 1.000 pengguna terhadap sekitar 1.700 film.
+
+3. Informasi Pengguna: Dataset MovieLens mencakup informasi tentang pengguna seperti ID pengguna, usia, dan jenis kelamin. Informasi ini dapat digunakan untuk pemahaman lebih lanjut tentang preferensi pengguna.
+
+4. Informasi Film: Dataset juga mencakup informasi tentang film seperti ID film, judul, genre, dan detail lainnya. Informasi ini dapat digunakan untuk memahami konten film yang direkomendasikan kepada pengguna.
+
+5. Data Rating: Data rating pengguna adalah bagian inti dari dataset MovieLens. Setiap rating terdiri dari ID pengguna, ID film, rating, dan timestamp. Data rating ini menjadi dasar untuk membangun model sistem rekomendasi yang dapat menghasilkan rekomendasi berdasarkan pola dan hubungan antara pengguna dan film yang telah mereka beri rating.
+
+6. Data Tambahan: Selain data rating, dataset MovieLens juga dapat mencakup data tambahan seperti tag yang diberikan oleh pengguna pada film tertentu atau informasi lain yang relevan. Data tambahan ini dapat memberikan konteks tambahan dalam membangun sistem rekomendasi.
+
+Dalam proses Data Understanding ini, penting untuk memahami struktur dataset, informasi yang terkandung di dalamnya, serta potensi data yang dapat dieksplorasi untuk membangun sistem rekomendasi yang efektif.
+
 Paragraf awal bagian ini menjelaskan informasi mengenai jumlah data, kondisi data, dan informasi mengenai data yang digunakan. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
 
-Selanjutnya, uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
+Variabel-variabel yang terdapat dalam dataset MovieLens dapat mencakup:
 
-Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
+* UserID: Variabel ini mengidentifikasi pengguna dalam dataset. Setiap pengguna memiliki ID unik yang digunakan untuk menghubungkan rating dengan pengguna yang memberikan rating tersebut.
+
+* MovieID: Variabel ini mengidentifikasi film dalam dataset. Setiap film memiliki ID unik yang digunakan untuk menghubungkan rating dengan film yang diberi rating.
+
+* Rating: Variabel ini menunjukkan rating yang diberikan oleh pengguna untuk suatu film. Rating dapat berupa skala numerik, seperti dari 1 hingga 5, yang menggambarkan tingkat kesukaan pengguna terhadap film tersebut.
+
+* Timestamp: Variabel ini menunjukkan waktu ketika rating diberikan oleh pengguna. Timestamp memberikan informasi tentang urutan waktu rating yang dapat digunakan untuk analisis temporal.
+
+* Informasi Pengguna: Dataset MovieLens juga dapat mencakup variabel-variabel yang memberikan informasi tentang pengguna, seperti usia, jenis kelamin, dan preferensi lainnya. Informasi ini dapat digunakan untuk menganalisis preferensi pengguna dan membangun rekomendasi yang lebih personal.
+
+* Informasi Film: Dataset juga dapat mencakup variabel-variabel yang memberikan informasi tentang film, seperti judul, genre, tahun rilis, dan detail lainnya. Informasi ini dapat digunakan untuk memahami konten film dan membangun rekomendasi yang sesuai dengan preferensi pengguna.
+
+Selain variabel-variabel tersebut, dataset MovieLens juga dapat mencakup variabel-variabel tambahan seperti tag yang diberikan oleh pengguna pada film tertentu atau informasi lain yang relevan. Variabel-variabel ini memberikan konteks tambahan yang dapat digunakan dalam analisis dan pembangunan sistem rekomendasi.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 - Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data beserta insight atau exploratory data analysis.
 
 ## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+1. Persiapan Awal: Mengimpor library yang diperlukan dan menginstal library yang diperlukan seperti pandas, numpy, dan scikit-learn.
+
+2. Unduh dan Muat Dataset: Mengunduh dataset MovieLens dan memuat dataset ke dalam DataFrame menggunakan library pandas.
+
+3. Eksplorasi Dataset: Melakukan eksplorasi dataset untuk memahami struktur dan informasi yang terkandung di dalamnya.
+
+4. Persiapan Data: Melakukan pemrosesan data yang diperlukan, seperti menggabungkan DataFrame, menghapus kolom yang tidak diperlukan, dan mengubah format data jika diperlukan.
+
+5. Membangun Model: Memilih model rekomendasi yang ingin digunakan, seperti SVD dari library surprise.
+
+6. Melatih Model dan Uji Sistem: Melatih model rekomendasi menggunakan seluruh data rating dan menguji sistem dengan memberikan rekomendasi kepada pengguna.
+
+**Rubrik/Kriteria Tambahan**: 
+* Penggabungan Data: Dalam sistem rekomendasi, kita perlu menggabungkan data dari beberapa sumber, seperti data pengguna, data peringkat, dan data film. Dengan menggabungkan data ini menjadi satu dataset, kita dapat menghasilkan pemahaman yang lebih lengkap tentang preferensi pengguna dan karakteristik film yang akan digunakan dalam proses rekomendasi.
+
+* Penghapusan Kolom yang Tidak Diperlukan: Terkadang, dataset sumber dapat mengandung kolom-kolom yang tidak relevan atau tidak diperlukan dalam proses rekomendasi. Dengan menghapus kolom-kolom tersebut, kita dapat menyederhanakan dataset dan mengurangi dimensi data yang tidak perlu, sehingga mempercepat pemrosesan dan menghemat sumber daya komputasi.
+
+* Pemrosesan Format Data: Dalam beberapa kasus, dataset sumber dapat mengandung format data yang tidak sesuai atau perlu diubah agar sesuai dengan format yang diperlukan oleh algoritma rekomendasi. Misalnya, dataset dapat menyimpan data dalam format teks atau tanggal yang perlu diubah menjadi format numerik agar dapat digunakan dalam proses rekomendasi.
+
+* Pembersihan dan Pemrosesan Missing Values: Dataset sumber juga dapat mengandung missing values atau nilai yang hilang. Missing values dapat mempengaruhi kualitas model rekomendasi, oleh karena itu perlu dilakukan pembersihan dan pemrosesan missing values dengan menggantikan nilai yang hilang dengan nilai yang sesuai, seperti rata-rata atau median.
+
+Melalui tahapan data preparation ini, kita dapat mempersiapkan dataset yang lebih bersih, lebih terstruktur, dan sesuai dengan kebutuhan algoritma rekomendasi. Hal ini akan mempengaruhi kualitas sistem rekomendasi yang kita bangun, memberikan hasil yang lebih akurat dan relevan dalam memberikan rekomendasi kepada pengguna.
 
 ## Modeling
 Tahapan ini membahas mengenai model sisten rekomendasi yang Anda buat untuk menyelesaikan permasalahan. Sajikan top-N recommendation sebagai output.
