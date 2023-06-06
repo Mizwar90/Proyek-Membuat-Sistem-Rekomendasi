@@ -17,24 +17,33 @@ Dataset MovieLens: Dataset MovieLens merupakan salah satu dataset paling populer
 
 Dengan latar belakang tersebut, proyek ini memiliki relevansi dalam mengaplikasikan teknologi sistem rekomendasi untuk membantu pengguna menemukan konten yang sesuai dengan preferensi mereka, meningkatkan pengalaman pengguna, dan memfasilitasi peningkatan penjualan dalam industri e-commerce.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Jelaskan mengapa proyek ini penting untuk diselesaikan.
-- Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
-  
-  Format Referensi: [Judul Referensi](https://scholar.google.com/) 
-
 ## Business Understanding
 
-Pada bagian ini, Anda perlu menjelaskan proses klarifikasi masalah.
+1. Meningkatkan Pengalaman Pengguna: Salah satu tujuan utama dari proyek ini adalah meningkatkan pengalaman pengguna. Dengan memberikan rekomendasi yang relevan dan personal kepada pengguna, sistem rekomendasi dapat membantu mereka menemukan konten yang sesuai dengan preferensi mereka. Hal ini dapat meningkatkan kepuasan pengguna, memperpanjang waktu interaksi dengan platform atau layanan, dan membangun loyalitas pengguna.
+
+2. Meningkatkan Konversi dan Penjualan: Dalam konteks e-commerce, proyek ini dapat membantu meningkatkan konversi dan penjualan. Dengan menggunakan sistem rekomendasi untuk memberikan rekomendasi produk yang relevan kepada pengguna, platform e-commerce dapat mendorong pengguna untuk melakukan pembelian lebih banyak atau memilih produk dengan nilai transaksi yang lebih tinggi. Ini dapat menghasilkan peningkatan pendapatan dan pertumbuhan bisnis.
+
+3. Personalisasi Layanan: Sistem rekomendasi juga memungkinkan personalisasi layanan. Dengan memahami preferensi pengguna dan memberikan rekomendasi yang sesuai, platform atau layanan dapat menciptakan pengalaman yang unik dan disesuaikan untuk setiap pengguna. Hal ini dapat membantu membangun hubungan yang lebih dekat antara pengguna dan merek atau platform, serta meningkatkan loyalitas dan retensi pengguna.
+
+4. Meningkatkan Efisiensi Pencarian: Dengan adanya sistem rekomendasi yang efektif, pengguna tidak perlu lagi menghabiskan waktu yang lama untuk mencari atau memilih konten yang relevan. Sistem rekomendasi dapat menyaring dan menyajikan pilihan yang paling relevan, menghemat waktu dan usaha pengguna dalam mencari konten yang mereka sukai.
+
+5. Analisis Data dan Informasi: Dalam proyek ini, penggunaan data rating pengguna dan informasi film digunakan untuk membangun model rekomendasi. Hal ini juga memberikan peluang bagi perusahaan untuk menganalisis data tersebut, mendapatkan wawasan tentang preferensi pengguna, tren konsumsi, dan perilaku pengguna lainnya. Informasi ini dapat digunakan untuk pengambilan keputusan bisnis, seperti pengembangan produk, strategi pemasaran, dan penargetan audiens.
+
+6. Dengan pemahaman bisnis ini, proyek sistem rekomendasi dapat membantu perusahaan meningkatkan pengalaman pengguna, meningkatkan konversi dan penjualan, personalisasi layanan, meningkatkan efisiensi pencarian, serta memberikan wawasan berharga dari analisis data dan informasi yang dihasilkan.
 
 Bagian laporan ini mencakup:
 
 ### Problem Statements
 
-Menjelaskan pernyataan masalah:
-- Pernyataan Masalah 1
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+Berikut adalah beberapa pernyataan masalah (problem statements) yang terkait dengan proyek sistem rekomendasi tersebut:
+
+1. Pengguna mengalami kesulitan dalam menemukan konten yang sesuai dengan preferensi mereka di tengah banyaknya pilihan yang tersedia.
+2. Platform e-commerce menghadapi tantangan dalam meningkatkan konversi dan penjualan produk, karena pengguna sering kali kesulitan dalam memilih produk yang relevan.
+3. Pengguna menginginkan pengalaman yang lebih personal dan disesuaikan dengan preferensi mereka saat menggunakan platform atau layanan.
+4. Proses pencarian konten yang memakan waktu dan kurang efisien menghambat pengguna dalam menemukan konten yang mereka sukai.
+5. Perusahaan ingin memanfaatkan data rating pengguna dan informasi film untuk menganalisis preferensi pengguna, tren konsumsi, dan perilaku pengguna lainnya guna pengambilan keputusan bisnis yang lebih baik.
+
+Dengan merumuskan pernyataan masalah ini, proyek sistem rekomendasi dapat difokuskan untuk mengatasi kendala-kendala di atas dan memberikan solusi yang relevan.
 
 ### Goals
 
