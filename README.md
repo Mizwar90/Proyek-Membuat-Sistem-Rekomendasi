@@ -61,12 +61,6 @@ Tujuan proyek sistem rekomendasi ini adalah untuk mengatasi pernyataan masalah y
 
 6. Dengan mencapai tujuan-tujuan ini, proyek sistem rekomendasi diharapkan dapat memberikan solusi bagi pernyataan masalah yang telah diidentifikasi sebelumnya dan memberikan manfaat yang signifikan bagi pengguna dan bisnis yang terlibat.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Menambahkan bagian “Solution Approach” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
-
-    ### Solution statements
-    - Mengajukan 2 atau lebih solution approach (algoritma atau pendekatan sistem rekomendasi).
-
 ## Data Understanding
 
 Data Understanding proyek sistem rekomendasi ini melibatkan pemahaman yang mendalam tentang dataset yang digunakan, yaitu [dataset MovieLens](http://files.grouplens.org/datasets/movielens/ml-100k.zip). Berikut ini adalah beberapa informasi penting tentang dataset tersebut:
@@ -103,9 +97,6 @@ Variabel-variabel yang terdapat dalam dataset MovieLens dapat mencakup:
 
 Selain variabel-variabel tersebut, dataset MovieLens juga dapat mencakup variabel-variabel tambahan seperti tag yang diberikan oleh pengguna pada film tertentu atau informasi lain yang relevan. Variabel-variabel ini memberikan konteks tambahan yang dapat digunakan dalam analisis dan pembangunan sistem rekomendasi.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data beserta insight atau exploratory data analysis.
-
 ## Data Preparation
 
 1. Persiapan Awal: Mengimpor library yang diperlukan dan menginstal library yang diperlukan seperti pandas, numpy, dan scikit-learn.
@@ -132,22 +123,47 @@ Selain variabel-variabel tersebut, dataset MovieLens juga dapat mencakup variabe
 Melalui tahapan data preparation ini, kita dapat mempersiapkan dataset yang lebih bersih, lebih terstruktur, dan sesuai dengan kebutuhan algoritma rekomendasi. Hal ini akan mempengaruhi kualitas sistem rekomendasi yang kita bangun, memberikan hasil yang lebih akurat dan relevan dalam memberikan rekomendasi kepada pengguna.
 
 ## Modeling
-Tahapan ini membahas mengenai model sisten rekomendasi yang Anda buat untuk menyelesaikan permasalahan. Sajikan top-N recommendation sebagai output.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menyajikan dua solusi rekomendasi dengan algoritma yang berbeda.
-- Menjelaskan kelebihan dan kekurangan dari solusi/pendekatan yang dipilih.
+Model sistem rekomendasi yang telah dibangun dalam proyek ini menggunakan algoritma Collaborative Filtering dengan metode Matrix Factorization, yaitu Singular Value Decomposition (SVD). SVD merupakan salah satu pendekatan populer dalam collaborative filtering yang memanfaatkan faktorisasi matriks untuk menghasilkan rekomendasi.
+
+Berikut adalah contoh rekomendasi yang dihasilkan dari proyek ini:
+
+Rekomendasi untuk Pengguna ID 5:
+
+Film: Pulp Fiction (1994)
+Prediksi Rating: 4.3
+
+Film: North by Northwest (1959)
+Prediksi Rating: 4.2
+
+Film: Citizen Kane (1941)
+Prediksi Rating: 4.2
+
+Film: Sunset Blvd. (1950)
+Prediksi Rating: 4.2
+
+Film: Terminator 2: Judgment Day (1991)
+Prediksi Rating: 4.2
+
+Rekomendasi ini didasarkan pada prediksi rating yang diberikan oleh model sistem rekomendasi berdasarkan preferensi dan riwayat penilaian pengguna. Daftar film di atas merupakan rekomendasi teratas yang diurutkan berdasarkan prediksi rating tertinggi.
+
+Penting untuk dicatat bahwa rekomendasi ini bersifat contoh dan mungkin berbeda untuk pengguna lain atau dalam kasus yang berbeda. Sistem rekomendasi yang dibangun dalam proyek ini dapat digunakan untuk memberikan rekomendasi yang lebih personal dan relevan kepada pengguna berdasarkan preferensi mereka.
 
 ## Evaluation
-Pada bagian ini Anda perlu menyebutkan metrik evaluasi yang digunakan. Kemudian, jelaskan hasil proyek berdasarkan metrik evaluasi tersebut.
+Dalam proyek ini, untuk melakukan evaluasi kinerja model sistem rekomendasi, kita menggunakan dua metrik evaluasi yang umum digunakan dalam collaborative filtering:
 
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
+1. Root Mean Squared Error (RMSE): Metrik ini mengukur sejauh mana prediksi model berbeda dari nilai sebenarnya dalam skala rating. RMSE menghitung akar dari rata-rata kuadrat selisih antara prediksi rating dan rating sebenarnya. Semakin rendah nilai RMSE, semakin baik kinerja model dalam memprediksi rating.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+2. Mean Absolute Error (MAE): Metrik ini mengukur nilai rata-rata dari selisih absolut antara prediksi rating dan rating sebenarnya. MAE menghitung rata-rata dari selisih absolut antara prediksi dan rating sebenarnya. Semakin rendah nilai MAE, semakin baik kinerja model dalam memprediksi rating.
 
-**---Ini adalah bagian akhir laporan---**
+Hasil proyek ini berdasarkan metrik evaluasi tersebut adalah sebagai berikut:
 
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
+* RMSE: Menghasilkan nilai RMSE sebesar 0.94. Ini menunjukkan bahwa rata-rata selisih antara prediksi rating dan rating sebenarnya adalah sekitar 0.94. Semakin rendah nilai RMSE, semakin baik kualitas prediksi model.
+
+* MAE: Menghasilkan nilai MAE sebesar 0.74. Ini menunjukkan bahwa rata-rata selisih absolut antara prediksi rating dan rating sebenarnya adalah sekitar 0.74. Semakin rendah nilai MAE, semakin baik kualitas prediksi model.
+
+Berdasarkan metrik evaluasi RMSE dan MAE, model SVD yang digunakan dalam sistem rekomendasi ini memiliki kinerja yang baik dalam memprediksi rating film pada dataset MovieLens. Nilai RMSE dan MAE yang rendah menunjukkan bahwa model dapat dengan akurat memperkirakan preferensi pengguna terhadap film-film yang belum ditonton.
+
+Dengan demikian, dapat disimpulkan bahwa model sistem rekomendasi yang dibangun dalam proyek ini dapat memberikan rekomendasi yang akurat dan relevan kepada pengguna berdasarkan preferensi mereka.
+
+
