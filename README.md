@@ -47,12 +47,19 @@ Dengan merumuskan pernyataan masalah ini, proyek sistem rekomendasi dapat difoku
 
 ### Goals
 
-Menjelaskan tujuan proyek yang menjawab pernyataan masalah:
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
+Tujuan proyek sistem rekomendasi ini adalah untuk mengatasi pernyataan masalah yang telah disebutkan sebelumnya. Tujuan ini mencakup:
 
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
+1. Membantu pengguna menemukan konten yang sesuai dengan preferensi mereka: Tujuan utama proyek ini adalah memberikan solusi bagi pengguna yang mengalami kesulitan dalam menemukan konten yang sesuai dengan preferensi mereka. Dengan menggunakan algoritma rekomendasi yang cerdas, sistem akan memberikan rekomendasi yang relevan dan personal kepada pengguna, sehingga mereka dapat menemukan konten yang sesuai dengan minat mereka dengan lebih mudah.
+
+2. Meningkatkan konversi dan penjualan produk: Dalam konteks e-commerce, tujuan proyek ini adalah meningkatkan konversi dan penjualan produk dengan memberikan rekomendasi yang relevan kepada pengguna. Dengan memperlihatkan produk yang sesuai dengan preferensi dan riwayat belanja pengguna, sistem rekomendasi dapat mempengaruhi pengguna untuk melakukan pembelian lebih banyak atau memilih produk dengan nilai transaksi yang lebih tinggi.
+
+3. Personalisasi pengalaman pengguna: Proyek ini bertujuan untuk memberikan pengalaman pengguna yang lebih personal dan disesuaikan. Dengan memahami preferensi pengguna dan memberikan rekomendasi yang sesuai, sistem rekomendasi dapat menciptakan pengalaman yang unik dan disesuaikan untuk setiap pengguna. Tujuannya adalah menciptakan hubungan yang lebih dekat antara pengguna dan platform atau layanan, sehingga meningkatkan loyalitas dan retensi pengguna.
+
+4. Meningkatkan efisiensi pencarian: Salah satu tujuan proyek ini adalah meningkatkan efisiensi pencarian pengguna. Dengan menggunakan sistem rekomendasi yang efektif, pengguna tidak perlu lagi menghabiskan waktu yang lama untuk mencari atau memilih konten yang relevan. Sistem akan menyaring dan menyajikan pilihan yang paling relevan, menghemat waktu dan usaha pengguna dalam mencari konten yang mereka sukai.
+
+5. Menganalisis data dan informasi untuk pengambilan keputusan bisnis: Proyek ini juga bertujuan untuk memanfaatkan data rating pengguna dan informasi film untuk menganalisis preferensi pengguna, tren konsumsi, dan perilaku pengguna lainnya. Dengan melakukan analisis data yang mendalam, perusahaan dapat mendapatkan wawasan berharga yang dapat digunakan untuk pengambilan keputusan bisnis yang lebih baik, seperti pengembangan produk, strategi pemasaran, dan penargetan audiens.
+
+6. Dengan mencapai tujuan-tujuan ini, proyek sistem rekomendasi diharapkan dapat memberikan solusi bagi pernyataan masalah yang telah diidentifikasi sebelumnya dan memberikan manfaat yang signifikan bagi pengguna dan bisnis yang terlibat.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 - Menambahkan bagian “Solution Approach” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
