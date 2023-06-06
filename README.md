@@ -79,7 +79,7 @@ Data Understanding proyek sistem rekomendasi ini melibatkan pemahaman yang menda
 
 Dalam proses Data Understanding ini, penting untuk memahami struktur dataset, informasi yang terkandung di dalamnya, serta potensi data yang dapat dieksplorasi untuk membangun sistem rekomendasi yang efektif.
 
-Variabel-variabel yang terdapat dalam dataset MovieLens dapat mencakup:
+Variabel-variabel yang terdapat dalam dataset MovieLens mencakup:
 
 * UserID: Variabel ini mengidentifikasi pengguna dalam dataset. Setiap pengguna memiliki ID unik yang digunakan untuk menghubungkan rating dengan pengguna yang memberikan rating tersebut.
 
