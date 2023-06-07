@@ -35,11 +35,11 @@ Dengan latar belakang tersebut, proyek ini memiliki relevansi dalam mengaplikasi
 
 Berikut adalah beberapa pernyataan masalah (problem statements) yang terkait dengan proyek sistem rekomendasi tersebut:
 
-1. Pengguna mengalami kesulitan dalam menemukan konten yang sesuai dengan preferensi mereka di tengah banyaknya pilihan yang tersedia.
-2. Platform e-commerce menghadapi tantangan dalam meningkatkan konversi dan penjualan produk, karena pengguna sering kali kesulitan dalam memilih produk yang relevan.
-3. Pengguna menginginkan pengalaman yang lebih personal dan disesuaikan dengan preferensi mereka saat menggunakan platform atau layanan.
-4. Proses pencarian konten yang memakan waktu dan kurang efisien menghambat pengguna dalam menemukan konten yang mereka sukai.
-5. Perusahaan ingin memanfaatkan data rating pengguna dan informasi film untuk menganalisis preferensi pengguna, tren konsumsi, dan perilaku pengguna lainnya guna pengambilan keputusan bisnis yang lebih baik.
+1. Bagaimana pengguna menemukan konten yang sesuai dengan preferensi mereka di tengah banyaknya pilihan yang tersedia?
+2. Bagaimana menghadapi tantangan dalam meningkatkan konversi dan penjualan produk dalam konteks e-commerce?
+3. Bagaimana meningkatkan pengalaman pengguna yang lebih personal dan disesuaikan dengan preferensi mereka saat menggunakan platform atau layanan?
+4. Bagaimana meningkatkan efisiensi pencarian pengguna dalam menemukan konten yang mereka sukai?
+5. Bagaimana Perusahaan ingin memanfaatkan data rating pengguna dan informasi film untuk menganalisis preferensi pengguna, tren konsumsi, dan perilaku pengguna lainnya guna pengambilan keputusan bisnis yang lebih baik?
 
 Dengan merumuskan pernyataan masalah ini, proyek sistem rekomendasi dapat difokuskan untuk mengatasi kendala-kendala di atas dan memberikan solusi yang relevan.
 
