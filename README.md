@@ -194,7 +194,7 @@ Dalam kasus ini, model SVD yang digunakan dalam sistem rekomendasi menunjukkan k
 
 Dengan adanya sistem rekomendasi ini, pengguna dapat menerima rekomendasi film yang sesuai dengan preferensi mereka, membantu mereka menemukan film-film baru yang mungkin mereka sukai berdasarkan data rating yang ada. Dengan demikian, sistem rekomendasi ini dapat meningkatkan pengalaman pengguna dalam menjelajahi dan menemukan konten yang menarik dalam domain film.
 
-Kesimpulannya, proyek ini berhasil membangun sebuah sistem rekomendasi lengkap dengan menggunakan algoritma SVD berdasarkan dataset MovieLens. Sistem rekomendasi ini dapat memberikan rekomendasi film yang personal dan relevan kepada pengguna berdasarkan preferensi mereka, dengan kinerja yang baik dalam memprediksi rating.
+Proyek ini berhasil membangun sebuah sistem rekomendasi lengkap dengan menggunakan algoritma SVD berdasarkan dataset MovieLens. Sistem rekomendasi ini dapat memberikan rekomendasi film yang personal dan relevan kepada pengguna berdasarkan preferensi mereka, dengan kinerja yang baik dalam memprediksi rating.
 
 ## Daftar Pustaka
 
