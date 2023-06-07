@@ -31,8 +31,6 @@ Dengan latar belakang tersebut, proyek ini memiliki relevansi dalam mengaplikasi
 
 6. Dengan pemahaman bisnis ini, proyek sistem rekomendasi dapat membantu perusahaan meningkatkan pengalaman pengguna, meningkatkan konversi dan penjualan, personalisasi layanan, meningkatkan efisiensi pencarian, serta memberikan wawasan berharga dari analisis data dan informasi yang dihasilkan.
 
-Bagian laporan ini mencakup:
-
 ### Problem Statements
 
 Berikut adalah beberapa pernyataan masalah (problem statements) yang terkait dengan proyek sistem rekomendasi tersebut:
@@ -59,7 +57,7 @@ Tujuan proyek sistem rekomendasi ini adalah untuk mengatasi pernyataan masalah y
 
 5. Menganalisis data dan informasi untuk pengambilan keputusan bisnis: Proyek ini juga bertujuan untuk memanfaatkan data rating pengguna dan informasi film untuk menganalisis preferensi pengguna, tren konsumsi, dan perilaku pengguna lainnya. Dengan melakukan analisis data yang mendalam, perusahaan dapat mendapatkan wawasan berharga yang dapat digunakan untuk pengambilan keputusan bisnis yang lebih baik, seperti pengembangan produk, strategi pemasaran, dan penargetan audiens.
 
-6. Dengan mencapai tujuan-tujuan ini, proyek sistem rekomendasi diharapkan dapat memberikan solusi bagi pernyataan masalah yang telah diidentifikasi sebelumnya dan memberikan manfaat yang signifikan bagi pengguna dan bisnis yang terlibat.
+Dengan mencapai tujuan-tujuan ini, proyek sistem rekomendasi diharapkan dapat memberikan solusi bagi pernyataan masalah yang telah diidentifikasi sebelumnya dan memberikan manfaat yang signifikan bagi pengguna dan bisnis yang terlibat.
 
 ## Data Understanding
 
@@ -109,7 +107,7 @@ Selain variabel-variabel tersebut, dataset MovieLens juga dapat mencakup variabe
 
 6. Melatih Model dan Uji Sistem: Melatih model rekomendasi menggunakan seluruh data rating dan menguji sistem dengan memberikan rekomendasi kepada pengguna.
 
-**Rubrik/Kriteria Tambahan**: 
+Adapun langkah persiapan data meliputi:
 * Penggabungan Data: Dalam sistem rekomendasi, kita perlu menggabungkan data dari beberapa sumber, seperti data pengguna, data peringkat, dan data film. Dengan menggabungkan data ini menjadi satu dataset, kita dapat menghasilkan pemahaman yang lebih lengkap tentang preferensi pengguna dan karakteristik film yang akan digunakan dalam proses rekomendasi.
 
 * Penghapusan Kolom yang Tidak Diperlukan: Terkadang, dataset sumber dapat mengandung kolom-kolom yang tidak relevan atau tidak diperlukan dalam proses rekomendasi. Dengan menghapus kolom-kolom tersebut, kita dapat menyederhanakan dataset dan mengurangi dimensi data yang tidak perlu, sehingga mempercepat pemrosesan dan menghemat sumber daya komputasi.
@@ -123,6 +121,28 @@ Melalui tahapan data preparation ini, kita dapat mempersiapkan dataset yang lebi
 ## Modeling
 
 Model sistem rekomendasi yang telah dibangun dalam proyek ini menggunakan algoritma Collaborative Filtering dengan metode Matrix Factorization, yaitu Singular Value Decomposition (SVD). SVD merupakan salah satu pendekatan populer dalam collaborative filtering yang memanfaatkan faktorisasi matriks untuk menghasilkan rekomendasi.
+
+Berikut adalah langkah-langkah detail tentang bagaimana algoritma SVD bekerja dalam proyek ini:
+
+1. Persiapan Data: Dataset MovieLens 100K yang berisi data rating film oleh pengguna dimuat dan diproses. Data rating dipisahkan menjadi kolom user_id, movie_id, dan rating.
+
+2. Pembentukan Matriks Rating: Dataset rating digunakan untuk membentuk matriks rating (user-item matrix) di mana setiap baris mewakili pengguna, setiap kolom mewakili film, dan entri matriks adalah rating yang diberikan oleh pengguna untuk film tersebut.
+
+3. Faktorisasi Matriks Menggunakan SVD: Matriks rating yang telah dibentuk kemudian dipecah menjadi tiga matriks menggunakan algoritma SVD, yaitu:
+
+* Matriks User (U): Matriks ini berisi representasi pengguna dalam ruang faktor. Setiap baris mewakili representasi pengguna dalam ruang faktor, dan setiap kolom mewakili faktor yang menggambarkan preferensi pengguna terhadap faktor-faktor tersebut.
+* Matriks Singular Value (S): Matriks diagonal ini berisi nilai singular values yang menggambarkan tingkat variasi atau pentingnya faktor dalam matriks rating.
+* Matriks Item (V^T): Transpose dari matriks ini berisi representasi film dalam ruang faktor. Setiap baris mewakili representasi film dalam ruang faktor, dan setiap kolom mewakili faktor yang menggambarkan karakteristik film terkait faktor-faktor tersebut.
+
+4. Reduksi Dimensi: Dalam faktorisasi SVD, sejumlah faktor teratas digunakan untuk merekonstruksi matriks rating. Dalam proyek ini, kita memilih sejumlah faktor yang optimal dengan menggunakan Cross Validation untuk mendapatkan kinerja terbaik.
+
+5. Prediksi Rating: Dengan menggunakan matriks faktor User (U), Singular Value (S), dan Item (V^T), kita dapat melakukan prediksi rating untuk film yang belum ditonton oleh pengguna. Prediksi rating dilakukan dengan mengalikan matriks faktor User dan Item, kemudian menambahkan rata-rata rating pengguna.
+
+6. Top-N Recommendation: Setelah prediksi rating untuk film-film yang belum ditonton dihitung, film-film tersebut diurutkan berdasarkan prediksi rating tertinggi. Kemudian, top-N film dengan prediksi rating tertinggi dipilih sebagai rekomendasi untuk pengguna.
+
+Dalam proyek ini, algoritma SVD menggunakan faktorisasi matriks untuk mengekstrak informasi dari dataset rating dan mengidentifikasi pola dan hubungan antara pengguna dan film. Dengan memanfaatkan matriks faktor User, Singular Value, dan Item, algoritma SVD dapat memberikan rekomendasi film yang personal dan relevan kepada pengguna berdasarkan preferensi mereka.
+
+Selain itu, evaluasi kinerja model dilakukan menggunakan metrik RMSE dan MAE untuk memastikan bahwa model memberikan prediksi rating yang akurat dan berkualitas.
 
 Berikut adalah contoh rekomendasi yang dihasilkan dari proyek ini:
 
