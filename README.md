@@ -198,22 +198,31 @@ Kesimpulannya, proyek ini berhasil membangun sebuah sistem rekomendasi lengkap d
 
 ## Daftar Pustaka
 
-[1] Koren, Y., Bell, R., & Volinsky, C. (2009). Matrix factorization techniques for recommender systems. Computer, 42(8), 30-37.
+[1]      Koren, Y., Bell, R., & Volinsky, C. (2009). *Matrix factorization techniques for recommender systems. Computer*, 42(8), 30-37.
 
-[2] Ricci, F., Rokach, L., Shapira, B., & Kantor, P. B. (2011). Introduction to recommender systems handbook. In Recommender Systems Handbook (pp. 1-35). Springer.
 
-[3] Shani, G., & Gunawardana, A. (2011). Evaluating recommendation systems. In Recommender Systems Handbook (pp. 257-297). Springer.
+[2]      Ricci, F., Rokach, L., Shapira, B., & Kantor, P. B. (2011). *Introduction to recommender systems handbook. In Recommender Systems Handbook* (pp. 1-35). Springer.
 
-[4] Leskovec, J., Rajaraman, A., & Ullman, J. D. (2014). Mining of Massive Datasets. Cambridge University Press.
 
-[5] Koren, Y. (2008). Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model. In Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '08), 426-434.
+[3]      Shani, G., & Gunawardana, A. (2011). *Evaluating recommendation systems. In Recommender Systems Handbook* (pp. 257-297). Springer.
 
-[6] Salakhutdinov, R., & Mnih, A. (2008). Probabilistic matrix factorization. In Advances in neural information processing systems (pp. 1257-1264).
 
-[7] Paterek, A. (2007). Improving regularized singular value decomposition for collaborative filtering. In Proceedings of the KDD Cup and Workshop (Vol. 2007, No. 1, pp. 39-42).
+[4]      Leskovec, J., Rajaraman, A., & Ullman, J. D. (2014). *Mining of Massive Datasets*. Cambridge University Press.
 
-[8] Resnick, P., & Varian, H. R. (1997). Recommender systems. Communications of the ACM, 40(3), 56-58.
 
-[9] Sarwar, B., Karypis, G., Konstan, J., & Riedl, J. (2001). Item-based collaborative filtering recommendation algorithms. In Proceedings of the 10th International Conference on World Wide Web (WWW '01), 285-295.
+[5]      Koren, Y. (2008). *Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model. In Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining* (KDD '08), 426-434.
 
-[10] Herlocker, J. L., Konstan, J. A., Terveen, L. G., & Riedl, J. T. (2004). Evaluating collaborative filtering recommender systems. ACM Transactions on Information Systems (TOIS), 22(1), 5-53.
+
+[6]      Salakhutdinov, R., & Mnih, A. (2008). *Probabilistic matrix factorization. In Advances in neural information processing systems* (pp. 1257-1264).
+
+
+[7]      Paterek, A. (2007). *Improving regularized singular value decomposition for collaborative filtering. In Proceedings of the KDD Cup and Workshop* (Vol. 2007, No. 1, pp. 39-42).
+
+
+[8]      Resnick, P., & Varian, H. R. (1997). *Recommender systems. Communications of the ACM*, 40(3), 56-58.
+
+
+[9]      Sarwar, B., Karypis, G., Konstan, J., & Riedl, J. (2001). *Item-based collaborative filtering recommendation algorithms. In Proceedings of the 10th International Conference on World Wide Web* (WWW '01), 285-295.
+
+
+[10]     Herlocker, J. L., Konstan, J. A., Terveen, L. G., & Riedl, J. T. (2004). *Evaluating collaborative filtering recommender systems. ACM Transactions on Information Systems* (TOIS), 22(1), 5-53.
