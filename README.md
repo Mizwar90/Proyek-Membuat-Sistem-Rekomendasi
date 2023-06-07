@@ -130,9 +130,9 @@ Berikut adalah langkah-langkah detail tentang bagaimana algoritma SVD bekerja da
 
 3. Faktorisasi Matriks Menggunakan SVD: Matriks rating yang telah dibentuk kemudian dipecah menjadi tiga matriks menggunakan algoritma SVD, yaitu:
 
-* Matriks User (U): Matriks ini berisi representasi pengguna dalam ruang faktor. Setiap baris mewakili representasi pengguna dalam ruang faktor, dan setiap kolom mewakili faktor yang menggambarkan preferensi pengguna terhadap faktor-faktor tersebut.
-* Matriks Singular Value (S): Matriks diagonal ini berisi nilai singular values yang menggambarkan tingkat variasi atau pentingnya faktor dalam matriks rating.
-* Matriks Item (V^T): Transpose dari matriks ini berisi representasi film dalam ruang faktor. Setiap baris mewakili representasi film dalam ruang faktor, dan setiap kolom mewakili faktor yang menggambarkan karakteristik film terkait faktor-faktor tersebut.
+    * Matriks User (U): Matriks ini berisi representasi pengguna dalam ruang faktor. Setiap baris mewakili representasi pengguna dalam ruang faktor, dan setiap kolom mewakili faktor yang menggambarkan preferensi pengguna terhadap faktor-faktor tersebut.
+    * Matriks Singular Value (S): Matriks diagonal ini berisi nilai singular values yang menggambarkan tingkat variasi atau pentingnya faktor dalam matriks rating.
+    * Matriks Item (V^T): Transpose dari matriks ini berisi representasi film dalam ruang faktor. Setiap baris mewakili representasi film dalam ruang faktor, dan setiap kolom mewakili faktor yang menggambarkan karakteristik film terkait faktor-faktor tersebut.
 
 4. Reduksi Dimensi: Dalam faktorisasi SVD, sejumlah faktor teratas digunakan untuk merekonstruksi matriks rating. Dalam proyek ini, kita memilih sejumlah faktor yang optimal dengan menggunakan Cross Validation untuk mendapatkan kinerja terbaik.
 
@@ -184,4 +184,36 @@ Berdasarkan metrik evaluasi RMSE dan MAE, model SVD yang digunakan dalam sistem 
 
 Dengan demikian, dapat disimpulkan bahwa model sistem rekomendasi yang dibangun dalam proyek ini dapat memberikan rekomendasi yang akurat dan relevan kepada pengguna berdasarkan preferensi mereka.
 
+## Kesimpulan
 
+Dalam proyek ini, telah berhasil dibangun sebuah sistem rekomendasi menggunakan algoritma Collaborative Filtering dengan metode Matrix Factorization (SVD) berdasarkan dataset MovieLens. Proses pengembangan sistem rekomendasi melibatkan tahapan-tahapan seperti persiapan data, pembangunan model, dan evaluasi kinerja.
+
+Hasil yang diperoleh dari proyek ini adalah sebuah sistem rekomendasi yang dapat memberikan rekomendasi film yang personal dan relevan kepada pengguna berdasarkan preferensi mereka. Dalam evaluasi kinerja model, metrik RMSE dan MAE digunakan untuk mengukur sejauh mana prediksi rating model berbeda dari nilai sebenarnya.
+
+Dalam kasus ini, model SVD yang digunakan dalam sistem rekomendasi menunjukkan kinerja yang baik dengan nilai RMSE sebesar 0.94 dan MAE sebesar 0.74. Nilai-nilai ini menunjukkan bahwa model mampu memberikan prediksi rating dengan tingkat akurasi yang baik.
+
+Dengan adanya sistem rekomendasi ini, pengguna dapat menerima rekomendasi film yang sesuai dengan preferensi mereka, membantu mereka menemukan film-film baru yang mungkin mereka sukai berdasarkan data rating yang ada. Dengan demikian, sistem rekomendasi ini dapat meningkatkan pengalaman pengguna dalam menjelajahi dan menemukan konten yang menarik dalam domain film.
+
+Kesimpulannya, proyek ini berhasil membangun sebuah sistem rekomendasi lengkap dengan menggunakan algoritma SVD berdasarkan dataset MovieLens. Sistem rekomendasi ini dapat memberikan rekomendasi film yang personal dan relevan kepada pengguna berdasarkan preferensi mereka, dengan kinerja yang baik dalam memprediksi rating.
+
+## Daftar Pustaka
+
+[1] Koren, Y., Bell, R., & Volinsky, C. (2009). Matrix factorization techniques for recommender systems. Computer, 42(8), 30-37.
+
+[2] Ricci, F., Rokach, L., Shapira, B., & Kantor, P. B. (2011). Introduction to recommender systems handbook. In Recommender Systems Handbook (pp. 1-35). Springer.
+
+[3] Shani, G., & Gunawardana, A. (2011). Evaluating recommendation systems. In Recommender Systems Handbook (pp. 257-297). Springer.
+
+[4] Leskovec, J., Rajaraman, A., & Ullman, J. D. (2014). Mining of Massive Datasets. Cambridge University Press.
+
+[5] Koren, Y. (2008). Factorization Meets the Neighborhood: A Multifaceted Collaborative Filtering Model. In Proceedings of the 14th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '08), 426-434.
+
+[6] Salakhutdinov, R., & Mnih, A. (2008). Probabilistic matrix factorization. In Advances in neural information processing systems (pp. 1257-1264).
+
+[7] Paterek, A. (2007). Improving regularized singular value decomposition for collaborative filtering. In Proceedings of the KDD Cup and Workshop (Vol. 2007, No. 1, pp. 39-42).
+
+[8] Resnick, P., & Varian, H. R. (1997). Recommender systems. Communications of the ACM, 40(3), 56-58.
+
+[9] Sarwar, B., Karypis, G., Konstan, J., & Riedl, J. (2001). Item-based collaborative filtering recommendation algorithms. In Proceedings of the 10th International Conference on World Wide Web (WWW '01), 285-295.
+
+[10] Herlocker, J. L., Konstan, J. A., Terveen, L. G., & Riedl, J. T. (2004). Evaluating collaborative filtering recommender systems. ACM Transactions on Information Systems (TOIS), 22(1), 5-53.
