@@ -29,7 +29,7 @@ Dengan latar belakang tersebut, proyek ini memiliki relevansi dalam mengaplikasi
 
 5. Analisis Data dan Informasi: Dalam proyek ini, penggunaan data rating pengguna dan informasi film digunakan untuk membangun model rekomendasi. Hal ini juga memberikan peluang bagi perusahaan untuk menganalisis data tersebut, mendapatkan wawasan tentang preferensi pengguna, tren konsumsi, dan perilaku pengguna lainnya. Informasi ini dapat digunakan untuk pengambilan keputusan bisnis, seperti pengembangan produk, strategi pemasaran, dan penargetan audiens.
 
-6. Dengan pemahaman bisnis ini, proyek sistem rekomendasi dapat membantu perusahaan meningkatkan pengalaman pengguna, meningkatkan konversi dan penjualan, personalisasi layanan, meningkatkan efisiensi pencarian, serta memberikan wawasan berharga dari analisis data dan informasi yang dihasilkan.
+Dengan pemahaman bisnis ini, proyek sistem rekomendasi dapat membantu perusahaan meningkatkan pengalaman pengguna, meningkatkan konversi dan penjualan, personalisasi layanan, meningkatkan efisiensi pencarian, serta memberikan wawasan berharga dari analisis data dan informasi yang dihasilkan.
 
 ### Problem Statements
 
